@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PracticeApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
@@ -25,3 +26,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# angular-practice-app
+
+basic bluee print of app 
+
+  recipe and shopping list
+>>>>>>> 5cb48a7539086fd0c7ac69fe634d02faca17e390
