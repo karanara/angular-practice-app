@@ -6,7 +6,7 @@ import { Subject } from "rxjs";
 @Injectable()
 export class RecipeService{
     recipesChanged= new Subject<Recipe[]>()
-   private recipes:Recipe[]=[
+  /* private recipes:Recipe[]=[
         new Recipe('A test Recipe',
         'This is simple',
         'https://www.eatingwell.com/thmb/Z30Dnoxft_c8dwJzKakVpJuuqJA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/creamy-garlic-skillet-chicken-with-spinach-7fb96b8ced6b4075b61b01d5d308f73b.jpg',
@@ -18,7 +18,8 @@ export class RecipeService{
             new Ingredient('Buns',2),
             new Ingredient('Breads',4)
         ])
-       ];
+       ];*/
+       private recipes :Recipe[];
     getRecipes(){
         return this.recipes.slice();
     }
@@ -27,6 +28,10 @@ export class RecipeService{
     }
     constructor(private slService:ShoppingService){
 
+    }
+    setRecipe(recipes:Recipe[]){
+        this.recipes=recipes;
+        this.recipesChanged.next(this.recipes.slice());
     }
 
     deleteRecipe(index:number){
