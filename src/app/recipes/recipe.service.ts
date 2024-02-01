@@ -19,7 +19,7 @@ export class RecipeService{
             new Ingredient('Breads',4)
         ])
        ];*/
-       private recipes :Recipe[];
+       private recipes :Recipe[]=[];
     getRecipes(){
         return this.recipes.slice();
     }
